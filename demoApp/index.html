@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>NG</title>
+        <script src="angular.js"></script>
+        <script src="index1.js"></script>
+    </head>
+    <body ng-app="myModule">
+        <div ng-controller="myController as ctrl">
+            {{ctrl.name}} - {{ctrl.factorymethod}}
+        </div>
+        
+        <div ng-controller="calcController as calc">
+                Number 1  - <input type="text" value="0" ng-model="calc.num1"> <br>
+                Number 2  - <input type="text" value="0" ng-model="calc.num2"><br>
+                Addition = {{calc.sum}}<br>
+                <input type="button" value="Process" ng-click="calc.ProcessSum()">
+        </div>
+    </body>
+</html>

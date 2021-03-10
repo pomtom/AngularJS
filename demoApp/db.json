@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Pramod Lawate",
+      "department": "Development",
+      "salary":95000,
+      "gender":"male",
+      "dob":"02/02/1988"
+    },
+    {
+      "id": 2,
+      "name": "Sachin Lawate",
+      "department": "IT",
+      "salary":85000,
+      "gender":"male",
+      "dob":"14/07/1989"
+    },
+    {
+      "id": 2,
+      "name": "Deepak Lawate",
+      "department": "Admin",
+      "salary":75000,
+      "gender":"male",
+      "dob":"07/10/1992"
+    }
+  ]
+}

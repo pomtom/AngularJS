@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>NG</title>
+        <script src="angular.js"></script>
+        <script src="index2.js"></script>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body ng-app="myModule">
+        <div ng-controller="employeeCtrl as emp">
+            <h2>{{emp.message}}</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="employee in emp.employees">
+                        <td>{{employee.id}}</td>
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.department}}</td>
+                        <td>{{employee.salary}}</td>
+                        <td>{{employee.gender}}</td>
+                        <td>{{employee.dob}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
